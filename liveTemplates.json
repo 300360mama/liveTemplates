@@ -1,0 +1,232 @@
+"cobtm": [
+
+	"$nameButton$": {
+		"toggles": false,
+	    "active": false, 
+	    "pressed": false, 
+	    "disabled": false, 
+	    "shadow": false
+	}
+
+],
+
+"cobargm": [
+	
+	"$graphName$": {
+		"orientation": "vertical",
+		"font-size": 14,
+		"font-color": "#000000",
+		"show-bar-values": true,
+		"legend": [
+			{
+				"id": "legend1",
+				"label": {
+					"html": "Legend 1"
+				},
+				"fill": "#ff0000",
+				"displayed": true
+			}
+		],
+		"nests": [
+			{
+				"nestLabel": {
+					"html": "t.nestLabel1"
+				},
+				"bars": [{
+						"animationBar": {
+							"delay": 1,
+							"duration": 2,
+							"disabled": false
+						},
+						"label": {
+							"html": "t.label1"
+						},
+						"label2": {
+							"html": "Test"
+						},
+						"items": [{
+								"type": "legend1",
+								"value": -50
+							},
+							{
+								"type": "legend2",
+								"value": -100
+							}
+						]
+					},
+					{
+						"animationBar": {
+							"disabled": true
+						},
+						"label": {
+							"html": "t.label2"
+						},
+						"label2": {
+							"html": "Test"
+						},
+						"items": [{
+								"type": "legend3",
+								"value": -50
+							},
+							{
+								"type": "legend4",
+								"value": -100
+							}
+						]
+					}
+				]
+			}
+		],
+		"valueSymbol": {
+			"separator": ","
+		},
+		"fixedToForIntegerValue": 2,
+		"scale": {
+			"from": 0,
+			"to": 300,
+			"step": 1,
+			"autoscale": false
+		}
+	}
+
+
+],
+
+"cotbm": [
+	"$tableModel$": {
+        "colWidth": {
+            "type": "Array",
+            "value": [
+                {
+                    "value": "50"
+                },
+                {
+                    "value": "50"
+                },
+                {
+                    "value": "50"
+                }
+            ],
+            "refresh": true,
+            "sealed": true
+        },
+        "rowHeight": {
+            "type": "Array",
+            "value": [
+                {
+                    "value": ""
+                },
+                {
+                    "value": ""
+                },
+                {
+                    "value": ""
+                }
+            ],
+            "refresh": true,
+            "sealed": true
+        },
+        "rows": [
+            {
+                "type": "row",
+                "border": {
+                    "width": "1",
+                    "color": "#000"
+                },
+                "cells": [
+                    {
+                        "colspan": 1,
+                        "rowspan": 1,
+                        "background": {
+                            "color": "",
+                            "image": "",
+                            "size": "100% 100%"
+                        },
+                        "border": {
+                            "width": "1",
+                            "color": "#000"
+                        },
+                        "text": {
+                            "html": "ClientName"
+                        }
+                    },
+                    {
+                        "colspan": 1,
+                        "rowspan": 1,
+                        "background": {
+                            "color": "",
+                            "image": "",
+                            "size": "100% 100%"
+                        },
+                        "border": {
+                            "width": "1",
+                            "color": "#000"
+                        },
+                        "text": {
+                            "html": "ClientSurname"
+                        }
+                    },
+                    {
+                        "colspan": 1,
+                        "rowspan": 1,
+                        "background": {
+                            "color": "",
+                            "image": "",
+                            "size": "100% 100%"
+                        },
+                        "border": {
+                            "width": "1",
+                            "color": "#000"
+                        },
+                        "text": {
+                            "html": "ClientEmail"
+                        }
+                    }
+                ]
+            }        
+        ]
+    }
+
+],
+
+"coimgm": [
+	"$image$": {
+		"src": "media/images/$pathToImg$",
+		"size": "cover",
+		"position": "center center"
+	}
+
+
+],
+
+"cotxtm": [
+	"$headerText$":{
+		"html": "t.$localisationModel$"
+	} 
+
+
+],
+
+"cotxt": [
+	'<co-text model="m.$model$" id="$id$" user-label="$userLabel$"></co-text>'
+],
+
+"coimg": [
+	'<co-image model="m.$model$" id="$id$" user-label="$userLabel$"></co-image>'
+],
+"cobarg": [
+	'<co-bar-graph model="m.$model$" id="$id$" user-label="$userLabel$"></co-bar-graph>'
+],
+"cotb": [
+	'<co-table model="m.$model$" id="$id$" user-label="$userLabel$"></co-table>'
+],
+"cocont": [
+	'<co-container model="m.$model$" id="$id$" user-label="$userLabel$"></co-container>'
+],
+"colnk": [
+	'<link rv-import="$component$">'
+
+]
+
+
+
